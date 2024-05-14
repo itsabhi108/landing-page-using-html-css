@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: quicksand;
+   color: black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+
+}
+.left{
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+    background-color: white
+}
+.right{
+    height: 100vh;
+    width: 60vw;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top{
+    display: flex;
+
+    height: 50vh;
+  
+}
+.right-bottom{
+    height: 50vh;
+    background-color: hsl(350, 61%, 58%);
+    background-image: url('https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position:center;
+}
+
+.right-top-left{
+    width:50%;
+    background-color: hsl(240, 66%, 60%);
+    background-image: url('https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-size: cover;
+background-position: bottom;
+
+
+}
+.right-top-right{
+    width: 50%;
+    background-color: yellow;
+    background-image: url('https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.lnav{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    align-items: center;
+  
+}
+#lnav-r{
+    margin-right: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+#lnav-r a{
+ text-decoration: none;
+   margin-right: 50px;
+  font-weight:600;
+}
+
+.ri-arrow-left-line{
+    margin-left: 30px;
+}
+.ri-twitter-fill{
+    color: blue;
+}
+#text-center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#text-center h1{
+    font-size: 90px;
+    font-weight: 800;
+}
+#text-center p{
+    font-size: 15px;
+    opacity: 0.6;
+    line-height:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#text-center a{
+   text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    opacity: 0.6;
+}
+#text-center a:hover{
+   color: brown
+}
+
+@media(max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100%;
+    }
+    .main .right{
+        width: 100%;
+    }
+}
